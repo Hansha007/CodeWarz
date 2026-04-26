@@ -5,12 +5,12 @@ import HowItWorks from "../components/HowItWorks";
 
 function Home() {
   return (
-    <>
+    <div>
       <Navbar />
       <HeroSection />
       <StatsSection />
       <HowItWorks />
-    </>
+    </div>
   );
 }
 

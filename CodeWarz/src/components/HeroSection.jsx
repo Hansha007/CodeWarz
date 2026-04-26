@@ -1,4 +1,5 @@
 import "../styles/hero.css";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
@@ -12,7 +13,9 @@ function HeroSection() {
 
       <p className="hero-tagline">CODE. FIGHT. CONQUER.</p>
 
-      <button className="hero-btn">ENTER THE WARZONE</button>
+      <Link to="/problems">
+        <button className="hero-btn">ENTER THE WARZONE</button>
+      </Link>
 
       <p className="scroll-text">⌄ Scroll Down ⌄</p>
 
