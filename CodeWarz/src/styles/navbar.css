@@ -1,0 +1,59 @@
+.navbar{
+    width:100%;
+    padding:25px 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:absolute;
+    top:0;
+    z-index:10;
+}
+
+.logo{
+    font-size:38px;
+    font-family:'Orbitron', sans-serif;
+    font-weight:800;
+    color:white;
+    letter-spacing:2px;
+    text-shadow:0 0 12px #7c3aed;
+}
+
+.nav-links{
+    display:flex;
+    gap:38px;
+    list-style:none;
+    color:#e5e7eb;
+    font-size:18px;
+}
+
+.nav-links li{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.nav-links li:hover{
+    color:#a855f7;
+}
+
+.nav-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.login-btn{
+    background:transparent;
+    border:1px solid #7c3aed;
+    color:white;
+    padding:10px 22px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.start-btn{
+    background:linear-gradient(to right,#7c3aed,#3b82f6);
+    border:none;
+    color:white;
+    padding:10px 22px;
+    border-radius:10px;
+    cursor:pointer;
+}
