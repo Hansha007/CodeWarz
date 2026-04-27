@@ -17,9 +17,9 @@ function HowItWorks() {
 
       <div className="how-right">
         <div className="mini-panel">⚡ Dynamic Coding Battles</div>
-        <div className="mini-panel">🏆 XP & Rank Progression</div>
-        <div className="mini-panel">🔥 Real-Time Live Arena</div>
-        <div className="mini-panel">👥 Warrior Leaderboards</div>
+        <div className="mini-panel">🏆 XP & Warrior Tiers</div>
+        <div className="mini-panel">🔥 Live Multiplayer Arena</div>
+        <div className="mini-panel">👥 Global Leaderboards</div>
       </div>
 
     </section>

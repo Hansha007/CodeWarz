@@ -2,6 +2,8 @@ import "../styles/navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+  
+
   return (
     <nav className="navbar">
       <div className="logo"><Link to="/">CODEWARZ</Link></div>
@@ -15,8 +17,13 @@ function Navbar() {
       </ul>
 
       <div className="nav-buttons">
-        <button className="login-btn">Login</button>
-        <button className="start-btn">Get Started</button>
+        <Link to="/login">
+          <button className="login-btn">Login</button>
+        </Link>
+
+       <Link to="/problems">
+       <button className="start-btn">Get Started</button>
+       </Link>
       </div>
     </nav>
   );

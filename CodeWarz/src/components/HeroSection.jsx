@@ -17,7 +17,7 @@ function HeroSection() {
         <button className="hero-btn">ENTER THE WARZONE</button>
       </Link>
 
-      <p className="scroll-text">⌄ Scroll Down ⌄</p>
+      <p className="scroll-text">⌄</p>
 
     </section>
   );

@@ -19,6 +19,11 @@ function StatsSection() {
         <p>Live Coding Arena</p>
       </div>
 
+      <div className="info-box">
+        <h2>XP</h2>
+        <p>Rank Progression</p>
+      </div>
+
     </section>
   );
 }

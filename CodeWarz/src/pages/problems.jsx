@@ -7,12 +7,12 @@ function Problems() {
     <>
       <Navbar />
 
-      <div style={{ padding: "140px 80px", minHeight: "100vh" }}>
+      <div style={{ padding: "140px 70px", minHeight: "100vh", width: "88%", margin: "auto" }}>
         <p style={{ color: "#8b9cff", letterSpacing: "3px", marginBottom: "15px" }}>
           CHOOSE YOUR BATTLE
         </p>
 
-        <h1 style={{ fontSize: "60px", marginBottom: "50px" }}>
+        <h1 style={{ fontSize: "58px", marginBottom: "45px" }}>
           Code Challenges Arena
         </h1>
 
@@ -20,40 +20,46 @@ function Problems() {
           <div
             key={problem.id}
             style={{
-              background: "rgba(255,255,255,0.05)",
-              border: "1px solid rgba(168,85,247,0.2)",
-              borderRadius: "18px",
-              padding: "25px 30px",
-              marginBottom: "20px",
-              boxShadow: "0 0 15px rgba(124,58,237,0.12)"
+              background: "rgba(255,255,255,0.035)",
+              border: "1px solid rgba(124,58,237,0.16)",
+              borderRadius: "22px",
+              padding: "28px 30px",
+              marginBottom: "22px",
+              backdropFilter: "blur(10px)",
+              boxShadow: "0 0 20px rgba(124,58,237,0.05)",
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center"
             }}
           >
-            <h2 style={{ marginBottom: "10px" }}>{problem.title}</h2>
+            <div>
+              <h2 style={{ marginBottom: "10px", fontSize: "24px" }}>{problem.title}</h2>
 
-            <p
-              style={{
-                color:
-                  problem.difficulty === "Easy"
-                    ? "#22c55e"
-                    : problem.difficulty === "Medium"
-                    ? "#facc15"
-                    : "#ef4444"
-              }}
-            >
-              Difficulty: {problem.difficulty}
-            </p>
+              <p
+                style={{
+                  color:
+                    problem.difficulty === "Easy"
+                      ? "#22c55e"
+                      : problem.difficulty === "Medium"
+                      ? "#facc15"
+                      : "#ef4444"
+                }}
+              >
+                Difficulty: {problem.difficulty}
+              </p>
 
-            <p style={{ margin: "10px 0", color: "#94a3b8" }}>
-              Reward: +50 XP
-            </p>
+              <p style={{ marginTop: "10px", color: "#94a3b8" }}>
+                Reward: +50 XP
+              </p>
+            </div>
 
             <Link to={`/problems/${problem.id}`}>
               <button
                 style={{
-                  padding: "10px 22px",
+                  padding: "12px 24px",
                   background: "linear-gradient(to right,#7c3aed,#2563eb)",
                   border: "none",
-                  borderRadius: "10px",
+                  borderRadius: "12px",
                   color: "white",
                   cursor: "pointer"
                 }}

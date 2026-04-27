@@ -18,17 +18,19 @@ function ProblemDetail() {
 
       <div
         style={{
-          padding: "130px 70px",
+          padding: "140px 70px",
           minHeight: "100vh",
+          width: "88%",
+          margin: "auto",
           display: "grid",
-          gridTemplateColumns: "1.1fr 1fr",
-          gap: "30px"
+          gridTemplateColumns: "1.05fr 1fr",
+          gap: "28px"
         }}
       >
         <div>
           <p style={{ color: "#8b9cff", letterSpacing: "3px" }}>ENTERED BATTLE ZONE</p>
 
-          <h1 style={{ fontSize: "50px", margin: "20px 0" }}>
+          <h1 style={{ fontSize: "50px", margin: "18px 0" }}>
             {selectedProblem.title}
           </h1>
 
@@ -40,7 +42,7 @@ function ProblemDetail() {
                   : selectedProblem.difficulty === "Medium"
                   ? "#facc15"
                   : "#ef4444",
-              marginBottom: "20px"
+              marginBottom: "22px"
             }}
           >
             Difficulty: {selectedProblem.difficulty}
@@ -48,41 +50,43 @@ function ProblemDetail() {
 
           <div
             style={{
-              background: "rgba(255,255,255,0.05)",
-              border: "1px solid rgba(168,85,247,0.2)",
-              borderRadius: "18px",
-              padding: "25px",
-              marginBottom: "20px"
+              background: "rgba(255,255,255,0.035)",
+              border: "1px solid rgba(124,58,237,0.16)",
+              borderRadius: "22px",
+              padding: "28px",
+              marginBottom: "20px",
+              backdropFilter: "blur(10px)"
             }}
           >
             <h3>Description</h3>
-            <p style={{ color: "#94a3b8", marginTop: "10px" }}>
+            <p style={{ color: "#94a3b8", marginTop: "12px", lineHeight: "1.8" }}>
               {selectedProblem.description}
             </p>
           </div>
 
           <div
             style={{
-              background: "rgba(255,255,255,0.05)",
-              border: "1px solid rgba(168,85,247,0.2)",
-              borderRadius: "18px",
-              padding: "25px"
+              background: "rgba(255,255,255,0.035)",
+              border: "1px solid rgba(124,58,237,0.16)",
+              borderRadius: "22px",
+              padding: "28px",
+              backdropFilter: "blur(10px)"
             }}
           >
             <h3>Example Test Case</h3>
-            <p style={{ marginTop: "10px" }}>Input: {selectedProblem.exampleInput}</p>
-            <p>Output: {selectedProblem.exampleOutput}</p>
+            <p style={{ marginTop: "12px" }}>Input: {selectedProblem.exampleInput}</p>
+            <p style={{ marginTop: "8px" }}>Output: {selectedProblem.exampleOutput}</p>
             <p style={{ color: "#8b9cff", marginTop: "15px" }}>Reward: +50 XP</p>
           </div>
         </div>
 
         <div
           style={{
-            background: "rgba(255,255,255,0.04)",
-            border: "1px solid rgba(168,85,247,0.2)",
-            borderRadius: "18px",
-            padding: "25px",
-            minHeight: "500px"
+            background: "rgba(255,255,255,0.035)",
+            border: "1px solid rgba(124,58,237,0.16)",
+            borderRadius: "22px",
+            padding: "28px",
+            backdropFilter: "blur(10px)"
           }}
         >
           <h3 style={{ marginBottom: "20px" }}>Code Editor Simulation</h3>
@@ -91,11 +95,11 @@ function ProblemDetail() {
             placeholder="// write your legendary solution here..."
             style={{
               width: "100%",
-              height: "300px",
-              background: "#050816",
+              height: "320px",
+              background: "#020617",
               color: "#8b9cff",
-              border: "1px solid #312e81",
-              borderRadius: "12px",
+              border: "1px solid rgba(124,58,237,0.2)",
+              borderRadius: "14px",
               padding: "20px",
               fontSize: "15px",
               outline: "none"
@@ -110,7 +114,7 @@ function ProblemDetail() {
               background: "linear-gradient(to right,#7c3aed,#2563eb)",
               border: "none",
               color: "white",
-              borderRadius: "10px",
+              borderRadius: "12px",
               cursor: "pointer"
             }}
           >

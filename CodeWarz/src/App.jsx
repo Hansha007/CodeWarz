@@ -5,6 +5,7 @@ import ProblemDetail from "./pages/ProblemDetail";
 import Dashboard from "./pages/Dashboard";
 import Leaderboard from "./pages/Leaderboard";
 import LiveRoom from "./pages/LiveRoom";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/liveroom" element={<LiveRoom />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );

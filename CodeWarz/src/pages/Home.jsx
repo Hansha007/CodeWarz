@@ -7,9 +7,18 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <HeroSection />
-      <StatsSection />
-      <HowItWorks />
+
+      <div
+        style={{
+          position: "relative",
+          minHeight: "100vh",
+          paddingTop: "90px"
+        }}
+      >
+        <HeroSection />
+        <StatsSection />
+        <HowItWorks />
+      </div>
     </div>
   );
 }
