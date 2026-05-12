@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Problems from "./pages/Problems";
+import Problems from "./pages/problems";
 import ProblemDetail from "./pages/ProblemDetail";
 import Dashboard from "./pages/Dashboard";
 import Leaderboard from "./pages/Leaderboard";
 import LiveRoom from "./pages/LiveRoom";
-import Login from "./pages/Login";
+import Login from "./pages/login";
 import DailyChallengePage from "./pages/DailyChallengePage";
-import Matchmaking from "./pages/Matchmaking";
+import Matchmaking from "./pages/matchMaking";
 import PrivateRoom from "./pages/PrivateRoom";
 import JoinRoom from "./pages/JoinRoom";
 import Tournaments from "./pages/Tournaments";
