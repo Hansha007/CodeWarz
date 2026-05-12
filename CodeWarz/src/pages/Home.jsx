@@ -2,24 +2,24 @@ import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import StatsSection from "../components/StatsSection";
 import HowItWorks from "../components/HowItWorks";
+import AboutCodeWarz from "../components/AboutCodeWarz";
+import DailyChallenge from "../components/DailyChallenge";
+import FinalCTA from "../components/FinalCTA";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <div>
+    <>
       <Navbar />
+      <HeroSection />
+      <StatsSection />
+      <HowItWorks />
+      <AboutCodeWarz />
+      <DailyChallenge />
+      <FinalCTA />
+      <Footer />
 
-      <div
-        style={{
-          position: "relative",
-          minHeight: "100vh",
-          paddingTop: "90px"
-        }}
-      >
-        <HeroSection />
-        <StatsSection />
-        <HowItWorks />
-      </div>
-    </div>
+    </>
   );
 }
 

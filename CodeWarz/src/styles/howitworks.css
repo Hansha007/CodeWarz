@@ -1,64 +1,78 @@
 .how-section{
     width:88%;
-    margin:0 auto 48px auto;
-    background:rgba(255,255,255,0.035);
-    border:1px solid rgba(124,58,237,0.16);
-    border-radius:28px;
-    padding:45px;
+    margin:40px auto 70px auto;
     display:grid;
-    grid-template-columns:1.15fr 1fr;
-    gap:28px;
-    backdrop-filter:blur(14px);
-    box-shadow:
-      inset 0 0 20px rgba(255,255,255,0.015),
-      0 0 25px rgba(124,58,237,0.06);
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
 }
 
-.section-mini{
-    color:#8b9cff;
-    letter-spacing:3px;
-    font-size:13px;
-    margin-bottom:12px;
+.feature-card{
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(124,58,237,0.16);
+    border-radius:24px;
+    padding:30px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 25px rgba(124,58,237,0.06);
+    transition:0.35s ease;
 }
 
-.how-left h1{
-    font-size:42px;
-    line-height:1.3;
-    margin-bottom:18px;
+.feature-card:hover{
+    border:1px solid rgba(124,58,237,0.3);
+    box-shadow:0 0 30px rgba(124,58,237,0.15);
+    transform:translateY(-4px);
 }
 
-.section-desc{
+.feature-card h2{
+    margin-bottom:14px;
+    font-size:24px;
+}
+
+.feature-card p{
     color:#94a3b8;
     line-height:1.8;
-    margin-bottom:22px;
-    font-size:14px;
 }
 
 .explore-btn{
-    padding:12px 22px;
+    margin-top:20px;
+    grid-column:span 2;
+    padding:16px 26px;
     background:linear-gradient(to right,#7c3aed,#2563eb);
     border:none;
     color:white;
-    border-radius:12px;
+    border-radius:14px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:600;
+    transition:0.35s ease;
     cursor:pointer;
 }
 
-.how-right{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:16px;
+.explore-btn:hover{
+    transform:translateY(-4px) scale(1.04);
+    box-shadow:0 0 22px rgba(124,58,237,0.45);
 }
 
-.mini-panel{
-    background:rgba(255,255,255,0.03);
-    border:1px solid rgba(124,58,237,0.14);
-    border-radius:18px;
-    padding:24px 16px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:#dbeafe;
-    font-size:14px;
-    line-height:1.6;
+@media(max-width:768px){
+    .how-section{
+        grid-template-columns:1fr;
+        width:90%;
+    }
+    
+    .explore-btn{
+        grid-column:span 1;
+    }
+    
+    .feature-card{
+        padding:20px;
+    }
+    
+    .feature-card h2{
+        font-size:20px;
+    }
+}
+
+@media(max-width:480px){
+    .feature-card p{
+        font-size:14px;
+    }
 }

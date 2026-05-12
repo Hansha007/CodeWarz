@@ -1,18 +1,214 @@
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 function LiveRoom() {
   return (
     <>
       <Navbar />
 
-      <div style={{ padding: "130px 0 60px 0", width: "88%", margin: "auto", minHeight: "100vh" }}>
-        <p style={{ color: "#8b9cff", letterSpacing: "3px" }}>LIVE MULTIPLAYER COMBAT ZONE</p>
+      <div
+        style={{
+          padding: "130px 0 60px 0",
+          width: "88%",
+          margin: "auto",
+          minHeight: "100vh"
+        }}
+      >
 
-        <h1 style={{ fontSize: "52px", margin: "18px 0 35px 0" }}>
+        <p style={{ color: "#8b9cff", letterSpacing: "3px" }}>
+          LIVE MULTIPLAYER COMBAT ZONE
+        </p>
+
+        <h1
+          style={{
+            fontSize: "52px",
+            margin: "18px 0 35px 0"
+          }}
+        >
           Warrior Arena
         </h1>
 
-        {/* top live duel panel */}
+        {/* ACTION PANEL */}
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3,1fr)",
+            gap: "20px",
+            marginBottom: "30px"
+          }}
+        >
+
+          {/* QUICK MATCH */}
+
+          <div
+            style={{
+              background: "rgba(255,255,255,0.03)",
+              border: "1px solid rgba(124,58,237,0.16)",
+              borderRadius: "22px",
+              padding: "28px",
+              transition: "0.3s ease"
+            }}
+          >
+
+            <h2 style={{ marginBottom: "14px" }}>
+              ⚡ Quick Match
+            </h2>
+
+            <p
+              style={{
+                color:"#94a3b8",
+                lineHeight:"1.7",
+                marginBottom:"22px"
+              }}
+            >
+              Instantly battle random warriors in real-time coding duels.
+            </p>
+
+            <Link to="/matchmaking">
+
+              <button
+                style={{
+                  padding:"11px 52px",
+                  border:"none",
+                  borderRadius:"10px",
+                  background:"linear-gradient(to right,#7c3aed,#2563eb)",
+                  color:"white",
+                  cursor:"pointer",
+                  fontWeight:"600"
+                }}
+              >
+                START MATCHMAKING
+              </button>
+
+            </Link>
+
+          </div>
+
+          {/* PRIVATE ROOM */}
+
+          <div
+            style={{
+              background: "rgba(255,255,255,0.03)",
+              border: "1px solid rgba(124,58,237,0.16)",
+              borderRadius: "22px",
+              padding: "28px",
+              transition: "0.3s ease"
+            }}
+          >
+
+            <h2 style={{ marginBottom: "14px" }}>
+              🔒 Private Room
+            </h2>
+
+            <p
+              style={{
+                color:"#94a3b8",
+                lineHeight:"1.7",
+                marginBottom:"22px"
+              }}
+            >
+              Create a private coding room and invite friends for battle.
+            </p>
+
+            <div
+              style={{
+                display:"flex",
+                gap:"12px",
+                flexWrap:"wrap"
+              }}
+            >
+
+              <Link to="/private-room">
+
+                <button
+                  style={{
+                    padding:"11px 40px",
+                    border:"none",
+                    borderRadius:"10px",
+                    background:"linear-gradient(to right,#7c3aed,#2563eb)",
+                    color:"white",
+                    cursor:"pointer",
+                    fontWeight:"600"
+                  }}
+                >
+                  CREATE
+                </button>
+
+              </Link>
+
+              <Link to="/join-room">
+
+                <button
+                  style={{
+                    padding:"11px 40px",
+                    border:"1px solid rgba(124,58,237,0.25)",
+                    borderRadius:"10px",
+                    background:"rgba(255,255,255,0.03)",
+                    color:"white",
+                    cursor:"pointer",
+                    fontWeight:"600"
+                  }}
+                >
+                  JOIN
+                </button>
+
+              </Link>
+
+            </div>
+
+          </div>
+
+          {/* TOURNAMENTS */}
+
+          <div
+            style={{
+              background: "rgba(255,255,255,0.03)",
+              border: "1px solid rgba(124,58,237,0.16)",
+              borderRadius: "22px",
+              padding: "28px",
+              transition: "0.3s ease"
+            }}
+          >
+
+            <h2 style={{ marginBottom: "14px" }}>
+              🏆 Tournaments
+            </h2>
+
+            <p
+              style={{
+                color:"#94a3b8",
+                lineHeight:"1.7",
+                marginBottom:"22px"
+              }}
+            >
+              Participate in scheduled coding tournaments and global events.
+            </p>
+
+            <Link to="/tournaments">
+
+              <button
+                style={{
+                  padding:"11px 52px",
+                  border:"none",
+                  borderRadius:"10px",
+                  background:"linear-gradient(to right,#7c3aed,#2563eb)",
+                  color:"white",
+                  cursor:"pointer",
+                  fontWeight:"600"
+                }}
+              >
+                VIEW EVENTS
+              </button>
+
+            </Link>
+
+          </div>
+
+        </div>
+
+        {/* LIVE DUEL PANEL */}
+
         <div
           style={{
             display: "grid",
@@ -21,64 +217,113 @@ function LiveRoom() {
             marginBottom: "25px"
           }}
         >
-          <div style={{
-            background: "rgba(255,255,255,0.03)",
-            border: "1px solid rgba(124,58,237,0.16)",
-            borderRadius: "22px",
-            padding: "25px"
-          }}>
+
+          {/* PLAYER 1 */}
+
+          <div
+            style={{
+              background: "rgba(255,255,255,0.03)",
+              border: "1px solid rgba(124,58,237,0.16)",
+              borderRadius: "22px",
+              padding: "25px"
+            }}
+          >
+
             <h2>⚔ Hansha_007</h2>
-            <p style={{ color: "#94a3b8", margin: "12px 0" }}>Current XP: 750</p>
-            <p style={{ color: "#22c55e" }}>Solved Test Cases: 8/10</p>
-            <p style={{ color: "#8b9cff", marginTop: "12px" }}>Typing Speed: 62 WPM</p>
+
+            <p style={{ color: "#94a3b8", margin: "12px 0" }}>
+              Current XP: 750
+            </p>
+
+            <p style={{ color: "#22c55e" }}>
+              Solved Test Cases: 8/10
+            </p>
+
+            <p style={{ color: "#8b9cff", marginTop: "12px" }}>
+              Typing Speed: 62 WPM
+            </p>
+
           </div>
 
-          <div style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontSize: "46px",
-            fontWeight: "bold"
-          }}>
+          {/* VS */}
+
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              fontSize: "46px",
+              fontWeight: "bold"
+            }}
+          >
             VS
           </div>
 
-          <div style={{
-            background: "rgba(255,255,255,0.03)",
-            border: "1px solid rgba(124,58,237,0.16)",
-            borderRadius: "22px",
-            padding: "25px"
-          }}>
+          {/* PLAYER 2 */}
+
+          <div
+            style={{
+              background: "rgba(255,255,255,0.03)",
+              border: "1px solid rgba(124,58,237,0.16)",
+              borderRadius: "22px",
+              padding: "25px"
+            }}
+          >
+
             <h2>⚔ CodeNinja_X</h2>
-            <p style={{ color: "#94a3b8", margin: "12px 0" }}>Current XP: 810</p>
-            <p style={{ color: "#ef4444" }}>Solved Test Cases: 6/10</p>
-            <p style={{ color: "#8b9cff", marginTop: "12px" }}>Typing Speed: 58 WPM</p>
+
+            <p style={{ color: "#94a3b8", margin: "12px 0" }}>
+              Current XP: 810
+            </p>
+
+            <p style={{ color: "#ef4444" }}>
+              Solved Test Cases: 6/10
+            </p>
+
+            <p style={{ color: "#8b9cff", marginTop: "12px" }}>
+              Typing Speed: 58 WPM
+            </p>
+
           </div>
+
         </div>
 
-        {/* center arena battle feed */}
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "1.3fr 1fr",
-          gap: "20px",
-          marginBottom: "25px"
-        }}>
-          <div style={{
-            background: "rgba(255,255,255,0.03)",
-            border: "1px solid rgba(124,58,237,0.16)",
-            borderRadius: "22px",
-            padding: "25px"
-          }}>
-            <h2 style={{ marginBottom: "20px" }}>Live Battle Console</h2>
+        {/* CENTER PANELS */}
 
-            <div style={{
-              height: "280px",
-              background: "#050816",
-              borderRadius: "18px",
-              padding: "18px",
-              color: "#22c55e",
-              lineHeight: "2"
-            }}>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1.3fr 1fr",
+            gap: "20px",
+            marginBottom: "25px"
+          }}
+        >
+
+          {/* LIVE CONSOLE */}
+
+          <div
+            style={{
+              background: "rgba(255,255,255,0.03)",
+              border: "1px solid rgba(124,58,237,0.16)",
+              borderRadius: "22px",
+              padding: "25px"
+            }}
+          >
+
+            <h2 style={{ marginBottom: "20px" }}>
+              Live Battle Console
+            </h2>
+
+            <div
+              style={{
+                height: "280px",
+                background: "#050816",
+                borderRadius: "18px",
+                padding: "18px",
+                color: "#22c55e",
+                lineHeight: "2"
+              }}
+            >
               {"> Connecting warriors..."}<br/>
               {"> Loading coding battlefield..."}<br/>
               {"> Problem: Longest Substring Without Repeat"}<br/>
@@ -87,46 +332,110 @@ function LiveRoom() {
               {"> XP boost activated..."}<br/>
               {"> Sudden death mode begins..."}
             </div>
+
           </div>
 
-          <div style={{
+          {/* REWARDS */}
+
+          <div
+            style={{
+              background: "rgba(255,255,255,0.03)",
+              border: "1px solid rgba(124,58,237,0.16)",
+              borderRadius: "22px",
+              padding: "25px"
+            }}
+          >
+
+            <h2 style={{ marginBottom: "18px" }}>
+              Battle Rewards
+            </h2>
+
+            <div
+              style={{
+                display: "grid",
+                gap: "14px"
+              }}
+            >
+
+              <div
+                style={{
+                  padding: "18px",
+                  background: "rgba(255,255,255,0.03)",
+                  borderRadius: "14px"
+                }}
+              >
+                🏆 Winner Reward: +120 XP
+              </div>
+
+              <div
+                style={{
+                  padding: "18px",
+                  background: "rgba(255,255,255,0.03)",
+                  borderRadius: "14px"
+                }}
+              >
+                🔥 Streak Bonus: +20 XP
+              </div>
+
+              <div
+                style={{
+                  padding: "18px",
+                  background: "rgba(255,255,255,0.03)",
+                  borderRadius: "14px"
+                }}
+              >
+                ⚡ Speed Bonus: +15 XP
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* LIVE PLAYERS */}
+
+        <div
+          style={{
             background: "rgba(255,255,255,0.03)",
             border: "1px solid rgba(124,58,237,0.16)",
             borderRadius: "22px",
             padding: "25px"
-          }}>
-            <h2 style={{ marginBottom: "18px" }}>Battle Rewards</h2>
+          }}
+        >
 
-            <div style={{ display: "grid", gap: "14px" }}>
-              <div style={{ padding: "18px", background: "rgba(255,255,255,0.03)", borderRadius: "14px" }}>🏆 Winner Reward: +120 XP</div>
-              <div style={{ padding: "18px", background: "rgba(255,255,255,0.03)", borderRadius: "14px" }}>🔥 Streak Bonus: +20 XP</div>
-              <div style={{ padding: "18px", background: "rgba(255,255,255,0.03)", borderRadius: "14px" }}>⚡ Speed Bonus: +15 XP</div>
-            </div>
-          </div>
-        </div>
+          <h2 style={{ marginBottom: "18px" }}>
+            Warriors Currently In Arena
+          </h2>
 
-        {/* bottom live players */}
-        <div style={{
-          background: "rgba(255,255,255,0.03)",
-          border: "1px solid rgba(124,58,237,0.16)",
-          borderRadius: "22px",
-          padding: "25px"
-        }}>
-          <h2 style={{ marginBottom: "18px" }}>Warriors Currently In Arena</h2>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(4,1fr)",
+              gap: "14px"
+            }}
+          >
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: "14px" }}>
             {["ByteHunter", "AlgoQueen", "LoopMaster", "StackLegend"].map((name, i) => (
-              <div key={i} style={{
-                padding: "22px",
-                textAlign: "center",
-                borderRadius: "16px",
-                background: "rgba(255,255,255,0.03)"
-              }}>
+
+              <div
+                key={i}
+                style={{
+                  padding: "22px",
+                  textAlign: "center",
+                  borderRadius: "16px",
+                  background: "rgba(255,255,255,0.03)"
+                }}
+              >
                 ⚔ {name}
               </div>
+
             ))}
+
           </div>
+
         </div>
+
       </div>
     </>
   );

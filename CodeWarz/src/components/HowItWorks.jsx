@@ -1,27 +1,33 @@
 import "../styles/howitworks.css";
+import { Link } from "react-router-dom";
 
 function HowItWorks() {
   return (
     <section className="how-section">
 
-      <div className="how-left">
-        <p className="section-mini">HOW CODEWARZ WORKS</p>
-        <h1>Step Into The Arena. Solve. Rise. Repeat.</h1>
-        <p className="section-desc">
-          Face hand-crafted coding battles, unlock XP, dominate the live arena,
-          and climb through warrior ranks as every solved challenge sharpens your edge.
-        </p>
-
-        <button className="explore-btn">EXPLORE BATTLES</button>
+      <div className="feature-card">
+        <h2>⚡ Dynamic Coding Battles</h2>
+        <p>Face handcrafted coding missions with escalating complexity and warrior rewards.</p>
       </div>
 
-      <div className="how-right">
-        <div className="mini-panel">⚡ Dynamic Coding Battles</div>
-        <div className="mini-panel">🏆 XP & Warrior Tiers</div>
-        <div className="mini-panel">🔥 Live Multiplayer Arena</div>
-        <div className="mini-panel">👥 Global Leaderboards</div>
+      <div className="feature-card">
+        <h2>🏆 XP Progression</h2>
+        <p>Earn experience points, unlock elite warrior tiers, and dominate the global rankings.</p>
       </div>
 
+      <div className="feature-card">
+        <h2>🔥 Real-Time Arena</h2>
+        <p>Challenge coders in simulated multiplayer duels where speed and logic decide victory.</p>
+      </div>
+
+      <div className="feature-card">
+        <h2>👥 Competitive Leaderboards</h2>
+        <p>Track the strongest coders worldwide and push your profile toward legendary status.</p>
+      </div>
+
+      <Link to="/problems">
+        <button className="explore-btn">ENTER BATTLE MISSIONS</button>
+      </Link>
     </section>
   );
 }

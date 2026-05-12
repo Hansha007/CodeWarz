@@ -6,6 +6,11 @@ import Dashboard from "./pages/Dashboard";
 import Leaderboard from "./pages/Leaderboard";
 import LiveRoom from "./pages/LiveRoom";
 import Login from "./pages/Login";
+import DailyChallengePage from "./pages/DailyChallengePage";
+import Matchmaking from "./pages/Matchmaking";
+import PrivateRoom from "./pages/PrivateRoom";
+import JoinRoom from "./pages/JoinRoom";
+import Tournaments from "./pages/Tournaments";
 
 function App() {
   return (
@@ -18,6 +23,11 @@ function App() {
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/liveroom" element={<LiveRoom />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/daily-challenge" element={<DailyChallengePage />} />
+        <Route path="/matchmaking" element={<Matchmaking />} />
+        <Route path="/private-room" element={<PrivateRoom />} />
+        <Route path="/join-room" element={<JoinRoom />} />
+        <Route path="/tournaments" element={<Tournaments />} />
       </Routes>
     </BrowserRouter>
   );

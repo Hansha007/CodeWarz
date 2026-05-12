@@ -1,23 +1,22 @@
+import heroImg from "../assets/codewarz-hero-clean.png";
 import "../styles/hero.css";
-import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
-    <section className="hero">
+    <section className="hero-section">
 
-      <p className="hero-top-text">ENTER THE ULTIMATE CODING BATTLEFIELD</p>
+      {/* HERO IMAGE */}
+      <img
+        src={heroImg}
+        alt="CodeWarz Hero"
+        className="hero-image"
+      />
 
-      <div className="battle-icon">⚔</div>
+      {/* DARK OVERLAY */}
+      <div className="hero-dark-overlay"></div>
 
-      <h1 className="hero-title">CODEWARZ</h1>
-
-      <p className="hero-tagline">CODE. FIGHT. CONQUER.</p>
-
-      <Link to="/problems">
-        <button className="hero-btn">ENTER THE WARZONE</button>
-      </Link>
-
-      <p className="scroll-text">⌄</p>
+      {/* EXTRA SPACING BELOW HERO */}
+      <div className="hero-bottom-space"></div>
 
     </section>
   );
