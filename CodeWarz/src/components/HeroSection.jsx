@@ -1,4 +1,4 @@
-import heroImg from "../assets/codewarz-hero-clean.png";
+import heroImg from "../assets/codeWarz-hero-clean.png";
 import "../styles/hero.css";
 
 function HeroSection() {
