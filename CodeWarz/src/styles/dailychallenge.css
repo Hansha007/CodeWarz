@@ -1,0 +1,140 @@
+.challenge-section{
+    padding:20px 8% 55px;
+    background:#050816;
+}
+
+.challenge-card{
+    max-width:1100px;
+    margin:auto;
+
+    background:
+    linear-gradient(
+      135deg,
+      rgba(124,58,237,0.12),
+      rgba(37,99,235,0.08)
+    );
+
+    border:1px solid rgba(124,58,237,0.18);
+
+    border-radius:30px;
+
+    padding:48px 40px;
+
+    text-align:center;
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+    0 0 40px rgba(124,58,237,0.08);
+}
+
+.challenge-mini{
+    color:#a5b4fc;
+    letter-spacing:5px;
+    font-size:12px;
+    margin-bottom:18px;
+}
+
+.challenge-title{
+    color:white;
+    font-size:42px;
+    margin-bottom:20px;
+    font-family:'Orbitron', sans-serif;
+    line-height:1.2;
+}
+
+.challenge-desc{
+    color:#94a3b8;
+    max-width:680px;
+    margin:auto;
+    line-height:1.7;
+    font-size:15px;
+    margin-bottom:42px;
+}
+
+.challenge-info{
+    display:flex;
+    justify-content:center;
+    gap:65px;
+
+    margin-bottom:42px;
+}
+
+.challenge-info h3{
+    color:white;
+    margin-bottom:8px;
+    font-size:14px;
+}
+
+.challenge-info p{
+    color:#8b5cf6;
+    font-size:17px;
+    font-weight:700;
+}
+
+.challenge-btn{
+    padding:12px 95px;
+
+    border:none;
+    border-radius:14px;
+
+    background:
+    linear-gradient(to right,#7c3aed,#2563eb);
+
+    color:white;
+
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+
+.challenge-btn:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 30px rgba(124,58,237,0.25);
+}
+
+/* tablet */
+@media(max-width:1024px){
+
+    .challenge-info{
+        gap:40px;
+    }
+
+}
+
+/* mobile */
+@media(max-width:768px){
+
+    .challenge-section{
+        padding:20px 6% 70px;
+    }
+
+    .challenge-card{
+        padding:40px 24px;
+    }
+
+    .challenge-title{
+        font-size:28px;
+    }
+
+    .challenge-desc{
+        font-size:14px;
+    }
+
+    .challenge-info{
+        flex-direction:column;
+        gap:24px;
+    }
+
+    .challenge-btn{
+        width:100%;
+        padding:14px 20px;
+    }
+
+}
